@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./cr.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+
+<body onload="readAll()">
+    <div class="container">
+        <div class="form_container">
+            <form class="create_form">
+                <input type="text" placeholder="Enter Name" class="name">
+                <input type="number" placeholder="Enter Age" class="age">
+                <input type="number" placeholder="Enter ID" class="ID">
+                <input type="radio" name="Gender" value="male" class="gender">Male
+                <input type="radio" name="Gender" value="female" class="gender">Female
+                <input type="email" placeholder="Enter Email" class="email">
+                <button type="button" onclick="add()">Create</button>
+            </form>
+            <form class="update_form">
+                <input type="text" hidden class="update_id">
+                <input type="text" placeholder="Enter Name" class="uname">
+                <input type="number" placeholder="Enter Age" class="uage">
+                <input type="number" placeholder="Enter ID" class="uID">
+                <input type="radio" name="Gender" value="male" class="ugender">Male
+                <input type="radio" name="Gender" value="female" class="ugender">Female
+                <input type="email" placeholder="Enter Email" class="uemail">
+                <button type="button" onclick="update()">Update</button>
+            </form>
+            <button class="addbtn" onclick="createForm()">Add +</button>
+            <br />
+            <table class="table">
+                <thead>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>ID</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="table_data">
+
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+    </div>
+    <script src="./js.js">
+
+    </script>
+</body>
+
+</html>
